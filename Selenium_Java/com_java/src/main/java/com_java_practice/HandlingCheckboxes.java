@@ -21,7 +21,7 @@ public class HandlingCheckboxes {
             List<WebElement> checkboxes = driver.findElements(By.xpath("//div[@id='discount-checkbox']//input"));
             String labelName = "Indian Armed Forces";
             int index= 0;
-            List<String> labelNames = new ArrayList<>();
+            List<String> labelNames = new ArrayList<String>();
             for(WebElement label: Labels) {
                 labelNames.add(label.getText());
             }

@@ -14,7 +14,7 @@ public class StaticDropdownTest {
     public static  void handlingStaticDropdowns(WebElement element, String value) {
         WebDriver driver = setup();
         WebElement dropdown= driver.findElement(By.xpath("//select[@id='ctl00_mainContent_DropDownListCurrency']"));
-        Select drpDown = new Select(element);
+        Select drpDown = new Select(dropdown);
         drpDown.selectByValue(value);
         String text = drpDown.getFirstSelectedOption().getText();
         System.out.println("selected value" + text);

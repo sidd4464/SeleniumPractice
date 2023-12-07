@@ -24,7 +24,7 @@ public class BaseDemo {
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		driver.manage().window().maximize();
 		return driver;
 	}
